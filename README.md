@@ -66,17 +66,17 @@ python main.py
 docker-compose up --build
 ```
 
-## 🌐 API Endpointleri
+## API Endpointleri
 
 > FastAPI otomatik Swagger arayüzü de sağlamaktadır: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-## ⏰ Zamanlayıcı (APScheduler)
+## Zamanlayıcı (APScheduler)
 
 * `scheduler.py` dosyasında tanımlanmıştır.
 * API başlatıldığında otomatik devreye girer.
 * Her **3 saatte bir** scraper'ı çalıştırır ve veritabanını günceller.
 
-## 🔁 Manuel Scraping (`main.py`)
+## Manuel Scraping (`main.py`)
 
 * Tüm ABD'yi kapsayan bounding box'ları oluşturur.
 * Her bbox için `fetch_bbox_data` fonksiyonu ile veri çeker.
